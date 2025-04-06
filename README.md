@@ -10,37 +10,3 @@ For example, if a town has a large population, very few doctors, and high diseas
 
 By helping identify high-need areas, our solution can assist governments, NGOs, and healthcare organizations in prioritizing where to send medical resources, set up new clinics, or launch awareness campaigns. It's scalable, easy to update, and aligned with global development goals. This is just a first step — but it's a data-driven one, and it brings us closer to a world where everyone, no matter where they live, has access to the healthcare they deserve."
 
-
-    plt.figure(figsize=(10, 6))
-    sns.barplot(data=df, x='community', y='need_index', hue='year')
-    plt.title("Healthcare Need Index by Community")
-    plt.ylabel("Need Index (Higher = More Need)")
-    plt.xlabel("Community")
-    plt.xticks(rotation=45)
-    plt.tight_layout()
-    plt.show()
-
-# Main menu
-def main():
-    while True:
-        print("\n--- Healthcare Access Analyzer ---")
-        print("1. Insert New Data")
-        print("2. Analyze & Visualize Data")
-        print("3. Exit")
-        choice = input("Enter your choice: ")
-
-        if choice == '1':
-            insert_data()
-        elif choice == '2':
-            analyze_data()
-        elif choice == '3':
-            break
-        else:
-            print("❌ Invalid choice. Try again.")
-
-    conn.close()
-
-if _name_ == "_main_":
-    main()
-
-Explain this code
